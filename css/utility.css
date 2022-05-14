@@ -53,6 +53,24 @@ h1, h2, h3, h4, h5, h6, p{
     opacity: 0.7;
 }
 
+.btn-2{
+    border: none;
+    margin: 1rem 0;
+    border-radius: 35px;
+    background: var(--green);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    padding: 1rem 1.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    display: inline-block;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.btn-2:hover{
+    opacity: 0.7;
+}
+
 .text{
     font-size: 1.05rem;
     color: #d0d0d0;

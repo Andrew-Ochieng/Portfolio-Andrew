@@ -306,8 +306,8 @@
 .skills .item-text span:last-child{
     position: absolute;
 }
-.skills .item-text .w-90{
-    margin-left: 85%;
+.skills .item-text .w-100{
+    margin-left: 90%;
 }
 .skills .item-text .w-75{
     margin-left: 70%;
@@ -324,6 +324,13 @@
 .skills .item-text .w-68{
     margin-left: 63%;
 }
+.skills .item-text .w-50{
+    margin-left: 45%;
+}
+.skills .item-text .w-45{
+    margin-left: 40%;
+}
+
 .progress{
     margin: 0.8rem 0;
     border-radius: 10px;
@@ -338,8 +345,8 @@
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
 }
-.progress-bar.w-90{
-    width: 90%;
+.progress-bar.w-100{
+    width: 100%;
 }
 .progress-bar.w-75{
     width: 75%;
@@ -356,6 +363,12 @@
 .progress-bar.w-60{
     width: 60%;
 }
+.progress-bar.w-50{
+    width: 50%;
+}
+.progress-bar.w-45{
+    width: 45%;
+}
 
 /* #### PROJECTS PAGE #### */
 .projects{
@@ -367,6 +380,7 @@
     text-align: center;
 }
 .projects .item{
+    cursor: pointer;
     margin: 2rem 0;
     height: 320px;
     width: 100%;
@@ -376,10 +390,10 @@
     background: url(../assets/project-img-1.jpg) center/cover no-repeat;
 }
 .projects .row .item:nth-child(2){
-    background: url(../assets/project-img-2.jpg) center/cover no-repeat;
+    background: url(../assets/kccson1.png) center/cover no-repeat;
 }
 .projects .row .item:nth-child(3){
-    background: url(../assets/project-img-3.jpg) center/cover no-repeat;
+    background: url(../assets/kambi.png) center/cover no-repeat;
 }
 .projects .row .item:nth-child(4){
     background: url(../assets/project-img-4.jpg) center/cover no-repeat;
@@ -388,7 +402,7 @@
     background: url(../assets/project-img-5.jpg) center/cover no-repeat;
 }
 .projects .row .item:nth-child(6){
-    background: url(../assets/project-img-6.jpg) center/cover no-repeat;
+    background: url(../assets/vabrise.png) center/cover no-repeat;
 }
 .projects .item .item-overlay{
     position: absolute;
@@ -421,7 +435,7 @@
 }
 
 /* #### BLOG PAGE #### */
-.blog{
+/* .blog{
     padding: 5rem 0 2.5rem 0;
 }
 .blog > .text{
@@ -485,7 +499,7 @@
 }
 .blog .page-link:hover{
     background: var(--green);
-}
+} */
 
 /* #### CONTACT PAGE #### */
 .contact{
@@ -533,7 +547,7 @@
     width: 50px;
     height: 50px;
     background: var(--nero);
-    margin: 0 0.6rem;
+    margin: 0 0.4rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -549,7 +563,7 @@
 .contact-form input, .contact-form textarea{
     width: 100%;
     margin: 1rem 0;
-    background: var(--nero);
+    background: gainsboro;
     border: 2px solid transparent;
     font-size: 1rem;
     padding: 0.8rem 1rem;
@@ -558,7 +572,8 @@
     caret-color: #fff;
 }
 .contact-form input:focus, .contact-form textarea:focus{
-    border-color: var(--green);
+    border-width: 4px;
+    border-color: greenyellow;
 }
 .contact-form input::placeholder,
 .contact-form textarea::placeholder{

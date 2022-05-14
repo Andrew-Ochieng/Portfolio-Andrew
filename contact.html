@@ -49,9 +49,6 @@
             <li class = "nav-item">
               <a href = "projects.html" class = "nav-link">projects</a>
             </li>
-            <li class = "nav-item">
-              <a href = "blog.html" class = "nav-link">blog</a>
-            </li>
             <li class = "nav-item nav-active">
               <a href = "contact.html" class = "nav-link">contact</a>
             </li>
@@ -70,12 +67,16 @@
         </div>
       </div>
 
-      <p class = "text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam tempore, et dolores eum voluptas iusto voluptate, dicta iure mollitia atque, exercitationem deserunt laborum libero natus!</p>
+      <p class = "text">You can always reach out via the contact details below and let me know your thoughts about tech and 
+        how to make the services better.
+      </p>
 
       <div class = "row">
         <div class = "col-left">
           <h2>feel free to ask us!</h2>
-          <p class = "text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui soluta mollitia suscipit maxime sunt dolore deleniti quam nihil repellendus perferendis.</p>
+          <p class = "text">You can let me know how to help you with design, development, or 
+            even with consultations on tech - related stuff.
+          </p>
 
           <div class = "contact-info">
             <span><i class = "fas fa-envelope-open"></i></span>
@@ -93,7 +94,15 @@
             </h3>
           </div>
 
-          <div class = "contact-social-links">
+          <div class = "contact-info">
+            <span><i class = "fas fa-phone-square-alt"></i></span>
+            <h3>
+              <span class = "text">call me</span> <br>
+              + 254 710 815 080
+            </h3>
+          </div>
+
+          <!-- <div class = "contact-social-links">
             <a href = "#">
               <i class = "fab fa-facebook-f"></i>
             </a>
@@ -106,18 +115,20 @@
             <a href = "https://github.com/AndrewMartial">
               <i class = "fab fa-github"></i>
             </a>
-          </div>
+          </div> -->
         </div>
 
         <div class = "col-right">
-          <form class = "contact-form">
+          <form onclick="validateMail()" class = "contact-form" enctype="multipart/form-data"> 
+            <!-- action="mailto:andrewomosh44@gmail.com"-->
             <div class = "form-group">
-              <input type = "text" placeholder="your name">
-              <input type = "email" placeholder="your email">
-              <input type = "text" placeholder="your subject">
+              <input id="your-name" type = "text" placeholder="your name">
+              <input id="your-email" type = "email" placeholder="your email">
+              <input id="subject" type = "text" placeholder="your subject">
             </div>
-            <textarea rows = "5"></textarea>
-            <button href="andrewomosh44@gmail.com" type = "submit" class = "btn">send message</button>
+            <textarea placeholder="Your mesage..." rows = "6"></textarea>
+            <!-- <input class="btn-2" type="submit" value="Send Message"> -->
+            <button type = "submit" class = "btn">send message</button>
           </form>
         </div>
       </div>
@@ -126,79 +137,81 @@
     
     
 
-    <!-- footer -->
-    <footer class = "footer container">
+    <footer class="footer container">
       <div class = "row">
         <div class = "col">
           <h3 class = "footer-title">about</h3>
-          <p class = "text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium quia, magnam et deleniti similique voluptates nulla iusto temporibus veritatis asperiores consectetur quidem doloremque id possimus!</p>
+          <p class = "text">
+            Andrew is a passionate, curious developer who likes writing clean elegant code. 
+            He also likes listening to Country Music especially when coding</p>
           <div class = "social-links">
-            <a href = "#"><i class = "fab fa-twitter"></i></a>
-            <a href = "#"><i class = "fab fa-facebook"></i></a>
-            <a href = "#"><i class = "fab fa-instagram"></i></a>
+            <a href = "https://twitter.com/drew_martial"><i class = "fab fa-twitter"></i></a>
+            <a href = "https://www.facebook.com/andrewmartial44/"><i class = "fab fa-facebook"></i></a>
+            <a href = "https://www.linkedin.com/in/andrew-ochieng-00b076180/"><i class = "fab fa-linkedin"></i></a>
+            <a href = "https://github.com/AndrewMartial/"><i class = "fab fa-github"></i></a>
           </div>
         </div>
-
+    
         <div class = "col">
           <h3 class = "footer-title">links</h3>
           <div class = "footer-links">
             <a href = "#" class = "text">
-              <i class = "fas fa-long-arrow-alt-right"></i>
+              <i class = "fas fa-arrow-alt-circle-right"></i>
               home
             </a>
             <a href = "#" class = "text">
-              <i class = "fas fa-long-arrow-alt-right"></i>
+              <i class = "fas fa-arrow-alt-circle-right"></i>
               about
             </a>
             <a href = "#" class = "text">
-              <i class = "fas fa-long-arrow-alt-right"></i>
+              <i class = "fas fa-arrow-alt-circle-right"></i>
               services
             </a>
             <a href = "#" class = "text">
-              <i class = "fas fa-long-arrow-alt-right"></i>
+              <i class = "fas fa-arrow-alt-circle-right"></i>
               contact
             </a>
           </div>
         </div>
-
+    
         <div class = "col">
           <h3 class = "footer-title">more</h3>
           <div class = "footer-links">
             <a href = "#" class = "text">
-              <i class = "fas fa-long-arrow-alt-right"></i>
+              <i class = "fas fa-arrow-alt-circle-right"></i>
               graphics design
             </a>
             <a href = "#" class = "text">
-              <i class = "fas fa-long-arrow-alt-right"></i>
+              <i class = "fas fa-arrow-alt-circle-right"></i>
               web development
             </a>
             <a href = "#" class = "text">
-              <i class = "fas fa-long-arrow-alt-right"></i>
+              <i class = "fas fa-arrow-alt-circle-right"></i>
               ui/ux design
             </a>
             <a href = "#" class = "text">
-              <i class = "fas fa-long-arrow-alt-right"></i>
+              <i class = "fas fa-arrow-alt-circle-right"></i>
               project management
             </a>
           </div>
         </div>
-
+    
         <div class = "col">
           <h3 class = "footer-title">have a question?</h3>
           <div>
             <span>
               <i class = "fas fa-map-marker-alt"></i>
             </span>
-            <span class = "text">Baraton Street St. Baraton, Nandi, Kenya</span>
+            <span class = "text">Baraton St. Baraton, Nandi, Kenya</span>
           </div>
-
+    
           <div>
             <span>
               <i class = "fas fa-phone"></i>
             </span>
             <span class = "text">+254 710 815 080</span>
           </div>
-
+    
           <div>
             <span>
               <i class = "fas fa-envelope"></i>
@@ -207,11 +220,12 @@
           </div>
         </div>
       </div>
-
+    
       <div class = "footer-text">
         <p class = "text">Copyright &copy; 2022 All rights reserved | Andrew Ochieng</p>
       </div>
     </footer>
+        
     <!-- end of footer -->
 
 
